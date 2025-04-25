@@ -4,6 +4,8 @@ from .models import Question, Choice
 
 # Register your models here.
 
+admin.site.site_header = "🌟 Polls 管理ページ 🌟"
+
 class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 3
